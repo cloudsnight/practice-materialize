@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<!-- Catatan : Materialize disini updated to 1.0.0
+    jQuery disini updated to 3.4.1
+-->
+<head>
+  <!--Import Google Icon Font-->
+  <link href="iconfont/material-icons.css" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="materialize-v1.0.0/materialize/css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Materialize Sandbox</title>
+  <style>
+    .input-field {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s12">
+      <h1 class="center-align">Fancy Form & Input</h1>
+    </div>
+  </div>
+  <div class="container">
+    <!-- MENU ROW -->
+    <div class="row">
+      <div class="col s3">
+        <a class="dropdown-trigger btn btn-large blue" href="#" data-target="css1">CSS 1</a>
+        <ul id='css1' class='dropdown-content'>
+          <li>
+            <a href="2_1_typography.html">Typography & Alignment</a>
+          </li>
+          <li>
+            <a href="2_2_colors.html">Text & Background Colors</a>
+          </li>
+          <li>
+            <a href="2_3_buttons_icons.html">Buttons & Icons</a>
+          </li>
+          <li>
+            <a href="2_4_floating.html">Floating & Fixed Action Buttons</a>
+          </li>
+          <li>
+            <a href="2_5_navbar.html">Navbar</a>
+          </li>
+          <li>
+            <a href="2_6_collections.html">Collections & Badges</a>
+          </li>
+          <li>
+            <a href="2_7_grid.html">The Grid</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col s3">
+        <a class='dropdown-trigger btn btn-large green' href='#' data-target='css2'>CSS 2</a>
+        <ul id='css2' class='dropdown-content'>
+          <li>
+            <a href="3_1_cards.html">Cards</a>
+          </li>
+          <li>
+            <a href="3_2_breadcrumbs.html">Breadcrumbs & Footer</a>
+          </li>
+          <li>
+            <a href="3_3_forms.html">Basic Form & Input</a>
+          </li>
+          <li>
+            <a href="3_4_forms_2.html">Fancy Form & Input</a>
+          </li>
+          <li>
+            <a href="3_5_tables_media.html">Tables & Media</a>
+          </li>
+          <li>
+            <a href="3_6_chips_pagination.html">Chips & Pagination</a>
+          </li>
+          <li>
+            <a href="3_7_preloaders.html">Preloaders</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col s3">
+        <a class='dropdown-trigger btn btn-large yellow black-text' href='#' data-target='js1'>JS 1</a>
+        <ul id='js1' class='dropdown-content'>
+          <li>
+            <a href="4_1_carousel.html">Carousel</a>
+          </li>
+          <li>
+            <a href="4_2_collapsible.html">Collapsible</a>
+          </li>
+          <li>
+            <a href="4_3_feature_discovery.html">Feature Discovery</a>
+          </li>
+          <li>
+            <a href="4_4_dialogs.html">Toast & Tooltip Dialogs</a>
+          </li>
+          <li>
+            <a href="4_5_material_box_slider.html">Material Box & Slider</a>
+          </li>
+          <li>
+            <a href="4_6_modal.html">Modal</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col s3">
+        <a class='dropdown-trigger btn btn-large red' href='#' data-target='js2'>JS 2</a>
+        <ul id='js2' class='dropdown-content'>
+          <li>
+            <a href="5_1_parallax.html">Parallax</a>
+          </li>
+          <li>
+            <a href="5_2_sidenav.html">Sidenav</a>
+          </li>
+          <li>
+            <a href="5_3_pushpin.html">Pushpin</a>
+          </li>
+          <li>
+            <a href="5_4_scrollspy.html">Scrollspy</a>
+          </li>
+          <li>
+            <a href="5_5_tabs.html">Tabs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ./ MENU ROW END -->
+    <br>
+    <br>
+
+    <!-- START HERE -->
+    <form>
+      <!-- SWITCH -->
+      <div class="switch">
+        <label>
+          Disable
+          <input type="checkbox" checked>
+          <span class="lever"></span>
+          Enable
+        </label>
+      </div>
+
+      <!-- DISABLED SWITCH -->
+      <div class="switch">
+        <label>
+          Disable
+          <input type="checkbox" disabled>
+          <span class="lever"></span>
+          Enable
+        </label>
+      </div>
+
+      <br>
+      <br>
+
+      <!-- FILE INPUT -->
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>Upload File</span>
+          <input type="file">
+        </div>
+        <div class="file-path-wrapper">
+          <input type="text" class="file-path">
+        </div>
+      </div>
+
+      <!-- RANGE SLIDER -->
+      <p class="range-field">
+        <input type="range" min="0" max="100" value="0">
+      </p>
+
+      <!-- DATE PICKER -->
+      <div class="input-field">
+        <input type="text" class="datepicker" id="date">
+        <label for="date">Choose a Date</label>
+      </div>
+
+      <!-- TIME PICKER -->
+      <div class="input-field">
+        <input type="text" id="time" class="timepicker">
+        <label for="time">Choose a Time</label>
+      </div>
+
+      <!-- CHARACTER COUNTER -->
+      <div>
+        <input id="post" type="text" data-length="10">
+        <label for="post">Post</label>
+      </div>
+
+      <!-- AUTOCOMPLETE -->
+      <div class="input-field">
+        <input type="text" id="fruit" class="autocomplete">
+        <label for="fruit">Type a Fruit</label>
+      </div>
+
+      <br>
+      <br>
+      <div>
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </form>
+
+
+
+    <!-- END HERE -->
+
+
+  </div>
+  <!-- ./ CONTAINER END -->
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-trigger').dropdown({
+        constrainWidth: false,
+        hover: false,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+      // JAVASCRIPT START HERE //
+
+      // Date Picker
+      $('.datepicker').datepicker({
+        closeOnSelect: true,
+        selectMonths: true,
+        selectYears: 2019,
+        showClearBtn: true
+      });
+
+      // Time Picker
+      $('.timepicker').timepicker({
+        default: 'now',
+        twelvehour: true,
+        autoclose: false,
+        showClearBtn: true
+      });
+
+      // Input with character length
+      $('#post').characterCounter();
+
+      // autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Apple": null,
+          "Grape": null,
+          "Orange": null,
+          "Pinniaple": null,
+          "Mango": null,
+          "Banana": null,
+        },
+        limit: 10,
+        minLength: 2
+      });
+    });
+  </script>
+
+  <script>
+    
+  </script>
+</body>
+
+</html>
